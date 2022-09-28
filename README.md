@@ -1,0 +1,1 @@
+## React IDE, kurulum,ES6 modul sistem,Callback function (async, await), promises,Array function
