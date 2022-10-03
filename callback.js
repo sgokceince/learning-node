@@ -57,7 +57,7 @@ getData();
 })();
 
 */
-
+/*
 const getComments = (number) => {
    return new Promise((resolve, reject) => {
       if(number === 1) {
@@ -71,3 +71,17 @@ const getComments = (number) => {
 getComments(5)
    .then((data) => console.log(data))
    .catch((e) => console.log(e));
+
+*/
+
+const getUsers = () => {
+  return new Promise(async(resolve, reject) => {
+     const { data } = await axios("https://jsonplaceholder.typicode.com/users")
+
+     resolve(data)
+  });
+};
+
+getUsers()
+  .then((data) => console.log(data))
+  .catch((e) => console.log(e));
