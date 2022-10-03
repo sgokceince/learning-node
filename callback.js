@@ -89,11 +89,13 @@ const getPost = (post_id) => {
      resolve(data)
   });
 };
+// sıralı gelmesi için datanın anonim fonksiyon ile async calıştırıldı.
+(async()=> {
+  await getUsers()
+   .then((data) => console.log(data))
+   .catch((e) => console.log(e));
 
-getUsers()
-  .then((data) => console.log(data))
-  .catch((e) => console.log(e));
-
-getPost(1)
-  .then((data) => console.log(data))
-  .catch((e) => console.log(e));
+ await getPost(1)
+    .then((data) => console.log(data))
+   .catch((e) => console.log(e));
+})();
