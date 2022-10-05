@@ -46,6 +46,12 @@ users.map((item) => {
 */
 
 //find array içinde arama yapar.
-
+/*
 const result = users.find((item) => item.name === "Sakiz" && item.age > 2);
     console.log(result)
+*/
+
+//filter filtreleme yapar.
+
+const filtered = users.filter((item) => item.name ==="Gusta" && item.age <= 5)
+  console.log(filtered)
