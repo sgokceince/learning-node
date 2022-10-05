@@ -68,7 +68,16 @@ const filtered = users.filter((item) => item.name ==="Gusta" && item.age <= 5)
 */
 
 // every arrayin bütün elemanlarının şarta uymasını bekler.
-
+/*
 const every = users.every((item) => item.age > 2);
 
 console.log(every )
+*/
+
+//includes dizinin içinde geçiyor mu geçmiyor mu diye bakar false veya true döner
+
+const meyveler = ["elma", "armut", "muz"];
+
+const isIncluded = meyveler.includes("muz");
+
+console.log(isIncluded);
