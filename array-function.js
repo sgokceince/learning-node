@@ -61,5 +61,14 @@ const filtered = users.filter((item) => item.name ==="Gusta" && item.age <= 5)
 //some arrayin içindeki elemanlardan birnin verdiğimiz koşula uyup uymadıgına bakar uyuyorsa true döner uymuyorsa false döner
    
  // const some = users.some(item => item.age === 10); false
-    const some = users.some((item) => item.age === 3 )
+ /*
+    const some = users.some((item) => item.age === 3 ) //true
    console.log(some)
+
+*/
+
+// every arrayin bütün elemanlarının şarta uymasını bekler.
+
+const every = users.every((item) => item.age > 2);
+
+console.log(every )
